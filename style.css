@@ -1,0 +1,59 @@
+/* Basic styles for the interactive assignment */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #0078d7;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+section {
+    margin-bottom: 2rem;
+}
+button {
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background: #0078d7;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+button:hover {
+    background: #005fa3;
+}
+.error {
+    color: #d8000c;
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+.success {
+    color: #388e3c;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.dark-mode {
+    background: #222;
+    color: #f4f4f4;
+}
+.dark-mode main {
+    background: #333;
+    color: #f4f4f4;
+}
+.dark-mode header {
+    background: #111;
+}

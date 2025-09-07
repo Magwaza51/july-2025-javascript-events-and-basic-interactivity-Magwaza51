@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Page with JavaScript</h1>
+    </header>
+    <main>
+        <!-- Light/Dark Mode Toggle -->
+        <section id="theme-section">
+            <h2>Light/Dark Mode Toggle</h2>
+            <button id="toggle-theme">Switch to Dark Mode</button>
+        </section>
+
+        <!-- Counter Feature -->
+        <section id="counter-section">
+            <h2>Counter Game</h2>
+            <p>Count: <span id="counter-value">0</span></p>
+            <button id="increment-btn">Increment</button>
+            <button id="reset-btn">Reset</button>
+        </section>
+
+        <!-- Form Section -->
+        <section id="form-section">
+            <h2>Sign Up Form</h2>
+            <form id="signup-form" novalidate>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" aria-describedby="name-error" required>
+                    <span class="error" id="name-error" aria-live="polite"></span>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" aria-describedby="email-error" required>
+                    <span class="error" id="email-error" aria-live="polite"></span>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" aria-describedby="password-error" required>
+                    <button type="button" id="toggle-password" aria-label="Show or hide password">Show</button>
+                    <span class="error" id="password-error" aria-live="polite"></span>
+                </div>
+                <div>
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" aria-describedby="confirm-password-error" required>
+                    <span class="error" id="confirm-password-error" aria-live="polite"></span>
+                </div>
+                <div>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="#" tabindex="0">terms and conditions</a></label>
+                    <span class="error" id="terms-error" aria-live="polite"></span>
+                </div>
+                <button type="submit">Sign Up</button>
+                <span class="success" id="form-success" aria-live="polite"></span>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
